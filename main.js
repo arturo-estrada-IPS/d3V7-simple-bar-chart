@@ -21,25 +21,25 @@
     .attr("class", "chart-area")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-    // Draw Axis labels (Bottom and Left) 
-    svg
-      .append("text")
-      .attr("class", "x axis-label")
-      .attr(
-        "transform",
-        `translate(${width / 2}, ${height + margin.bottom - 10})`
-      )
-      .attr("text-anchor", "middle")
-      .text("Competitors");
-    svg
-      .append("text")
-      .attr("class", "y axis-label")
-      .attr("transform", "rotate(-90)")
-      .attr("x", `${-height / 2}`)
-      .attr("y", `${-margin.left}`)
-      .attr("dy", "1em")
-      .attr("text-anchor", "middle")
-      .text("Marshmallows Eaten");
+  // Draw Axis labels (Bottom and Left) 
+  svg
+    .append("text")
+    .attr("class", "x axis-label")
+    .attr(
+      "transform",
+      `translate(${width / 2}, ${height + margin.bottom - 10})`
+    )
+    .attr("text-anchor", "middle")
+    .text("Competitors");
+  svg
+    .append("text")
+    .attr("class", "y axis-label")
+    .attr("transform", "rotate(-90)")
+    .attr("x", `${-height / 2}`)
+    .attr("y", `${-margin.left}`)
+    .attr("dy", "1em")
+    .attr("text-anchor", "middle")
+    .text("Marshmallows Eaten");
 
   /**
    * Fetch Data and create chart
